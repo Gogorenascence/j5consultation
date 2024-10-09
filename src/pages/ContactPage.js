@@ -10,14 +10,14 @@ function ContactPage() {
         message: "",
     })
 
-    const hours = {
-        "Monday": "8:30am – 5:00pm",
-        "Tuesday": "8:30am – 5:00pm",
-        "Wednesday": "8:30am – 5:00pm",
-        "Thursday":	"8:30am	– 5:00pm",
-        "Friday": "8:30am – 12:00pm",
-        "Saturday":	"12:00pm – 4:00pm"
-    }
+    // const hours = {
+    //     "Monday": "8:30am – 5:00pm",
+    //     "Tuesday": "8:30am – 5:00pm",
+    //     "Wednesday": "8:30am – 5:00pm",
+    //     "Thursday":	"8:30am	– 5:00pm",
+    //     "Friday": "8:30am – 12:00pm",
+    //     "Saturday":	"12:00pm – 4:00pm"
+    // }
 
     const handleChange = (event) => {
         setMessage({...message, [event.target.name]: event.target.value })

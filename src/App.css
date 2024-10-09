@@ -272,6 +272,24 @@
   display: flex;
 }
 
+.articlesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.articleBox {
+  background-color: #294377;
+  height: 300px;
+  width: 450px;
+  margin: auto;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 800px) {
   .flexColumnFullInner {
     display: flex;

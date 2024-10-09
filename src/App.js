@@ -12,11 +12,13 @@ import ServicesPage from './pages/ServicesPage';
 import ArticlesPage from './pages/ArticlesPage';
 import ArticlePage from './pages/ArticlePage';
 import ContactPage from './pages/ContactPage';
+import FAQPage from './pages/FAQPage';
 
 
 function App() {
 
-  let servicesText = require('./data/servicesText.json')
+  let faqText = require('./data/faqText.json')
+  let articles = require('./data/articles.json')
 
   return (
     <AppProvider>
@@ -30,10 +32,11 @@ function App() {
             <div className="app">
               <Routes>
                 <Route index element={<MainPage/>} />
-                <Route path="/services" element={<ServicesPage servicesText={servicesText}/>} />
+                <Route path="/services" element={<ServicesPage/>} />
                 <Route path="/contact" element={<ContactPage/>} />
-                {/* <Route path="/articles" element={<ArticlesPage/>} /> */}
-                {/* <Route path="/articles/:articleId" element={<ArticlePage/>} /> */}
+                <Route path="/articles" element={<ArticlesPage articles={articles}/>} />
+                <Route path="/articles/:articleID" element={<ArticlePage articles={articles}/>} />
+                <Route path="/faq" element={<FAQPage faqText={faqText}/>} />
               </Routes>
             </div>
           </div>

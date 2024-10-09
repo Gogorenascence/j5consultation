@@ -20,34 +20,42 @@ function NavBar(){
                         src="https://i.imgur.com/Q1Y2vV9.png"
                         alt="menu"/>
                 </div>
-                <li className={show? "navMenuItem": "navMenuItem shrink"}
-                    onClick={() => setShow(false)}
-                >
-                    <NavLink className="navBarLink white" to="/directory">
+                <NavLink className="navBarLink white" to="/directory">
+                    <li className={show? "navMenuItem": "navMenuItem shrink"}
+                        onClick={() => setShow(false)}
+                    >
                         <h2 className="fw-light textCenter">
                             About
                         </h2>
-                    </NavLink>
-                </li>
-                <li className={show? "navMenuItem": "navMenuItem shrink"}
-                    onClick={() => setShow(false)}
-                >
-                    <NavLink className="navBarLink white" to="/services">
+                    </li>
+                </NavLink>
+                <NavLink className="navBarLink white" to="/services">
+                    <li className={show? "navMenuItem": "navMenuItem shrink"}
+                        onClick={() => setShow(false)}
+                    >
                         <h2 className="fw-light textCenter">
                             Services
                         </h2>
-                    </NavLink>
-                </li>
-                <li className={show? "navMenuItem": "navMenuItem shrink"}
-                    onClick={() => setShow(false)}
-                >
-                    <NavLink className="navBarLink white" to="/services">
+                    </li>
+                </NavLink>
+                <NavLink className="navBarLink white" to="/articles">
+                    <li className={show? "navMenuItem": "navMenuItem shrink"}
+                        onClick={() => setShow(false)}
+                    >
                         <h2 className="fw-light textCenter">
                             Articles
                         </h2>
-                    </NavLink>
-                </li>
-
+                    </li>
+                </NavLink>
+                <NavLink className="navBarLink white" to="/faq">
+                    <li className={show? "navMenuItem": "navMenuItem shrink"}
+                        onClick={() => setShow(false)}
+                    >
+                        <h2 className="fw-light textCenter">
+                            FAQ
+                        </h2>
+                    </li>
+                </NavLink>
                 {/* <li className={show? "navMenuItem": "navMenuItem shrink"}
                     onClick={() => setShow(false)}
                 >
@@ -68,15 +76,15 @@ function NavBar(){
                     </NavLink>
                 </li> */}
 
-                <li className={show? "navMenuItem": "navMenuItem shrink"}
-                    onClick={() => setShow(false)}
-                >
-                    <NavLink className="navBarLink white" to="/Contact">
+                <NavLink className="navBarLink white" to="/Contact">
+                    <li className={show? "navMenuItem": "navMenuItem shrink"}
+                        onClick={() => setShow(false)}
+                    >
                         <h2 className="fw-light textCenter">
                             Contact
                         </h2>
-                    </NavLink>
-                </li>
+                    </li>
+                </NavLink>
             </ul>
             <ul className="navMenu mediaNav flex wide">
                 <NavLink className="navBarLink white" to="/">
@@ -88,7 +96,7 @@ function NavBar(){
                     <NavLink className="navBarLink white" to="/directory">
                         <li className="navMenuItem">
                             <h2 className="fw-light">
-                                ABOUT
+                                About
                             </h2>
                         </li>
                     </NavLink>
@@ -96,15 +104,23 @@ function NavBar(){
                     <NavLink className="navBarLink white" to="/services">
                         <li className="navMenuItem">
                             <h2 className="fw-light">
-                                SERVICES
+                                Services
                             </h2>
                         </li>
                     </NavLink>
 
-                    <NavLink className="navBarLink white" to="/services">
+                    <NavLink className="navBarLink white" to="/articles">
                         <li className="navMenuItem">
                             <h2 className="fw-light">
-                                ARTICLES
+                                Articles
+                            </h2>
+                        </li>
+                    </NavLink>
+
+                    <NavLink className="navBarLink white" to="/faq">
+                        <li className="navMenuItem">
+                            <h2 className="fw-light">
+                                FAQ
                             </h2>
                         </li>
                     </NavLink>
@@ -112,7 +128,7 @@ function NavBar(){
                     <NavLink className="navBarLink white" to="/contact">
                         <li className="navMenuItem">
                             <h2 className="fw-light">
-                                CONTACT
+                                Contact
                             </h2>
                         </li>
                     </NavLink>
