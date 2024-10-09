@@ -10,7 +10,7 @@ function NavBar(){
         <nav className="navbar flexFull">
             <ul className="navMenu nav">
                 <div className="navHome">
-                    <li className="navMenuItem2">
+                    <li className="navMenuItem2 flexFull">
                         <NavLink className="navBarLink white flexFull" to="/">
                         <img src="j5ch.png" className="bannerImage2"/>
                         </NavLink>
@@ -88,7 +88,7 @@ function NavBar(){
             </ul>
             <ul className="navMenu mediaNav flex wide">
                 <NavLink className="navBarLink white" to="/">
-                    <li className="navMenuItem2">
+                    <li className="navMenuItem2 flexFull">
                         <img src="j5ch.png" className="bannerImage"/>
                     </li>
                 </NavLink>

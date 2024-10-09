@@ -86,13 +86,14 @@
 }
 
 .bannerImage {
-    height: 63px;
-    margin: 5px 0 0 10px;
+    max-height: 63px;
+    margin: auto;
 }
 
 .bannerImage2 {
-    height: 60px;
-    margin: 7px 0 0 10px;
+    max-height: 55px;
+    /* margin: 7px 0 0 10px; */
+    margin: auto;
 }
 
 .flex-items {
