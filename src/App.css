@@ -1,0 +1,282 @@
+.app {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --window-height: calc(100vh - 264px);
+  /* --color-body: #fff; */
+}
+
+.content {
+  min-height: var(--window-height);
+}
+
+.footer {
+  position: relative;
+  background-color: #74d1d2;
+  /* height: 120px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  min-height: 192px;
+}
+
+.footerHead {
+  margin: 35px auto 0px auto;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.footerLink {
+  margin: 15px;
+  color: white;
+  font-weight: 500;
+}
+
+.copyRight {
+  margin: 15px;
+  color: white;
+  font-weight: 400;
+  margin: 0px auto 20px auto;
+}
+
+.back-to-top {
+	height: 65px;
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	cursor: pointer;
+	opacity: 100%;
+	transition: opacity 0.5s;
+}
+
+.sectionContainer {
+  margin: 0 40px 0 40px;
+}
+
+.sectionHeader {
+  text-align: start;
+  font-size: 22px;
+}
+
+.section {
+  text-align: start;
+}
+
+.lightSwitch {
+  height: 65px;
+  position: fixed;
+  right: 2rem;
+  bottom: 7rem;
+  cursor: pointer;
+  opacity: 30%;
+  transition: opacity 0.5s;
+  z-index: 900;
+}
+
+.lightSwitch:hover {
+  height: 65px;
+  position: fixed;
+  right: 2rem;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.marginBottom-0 {
+  margin-bottom: 0;
+}
+
+.navBarContainer {
+  position: sticky;
+  height: 72px;
+  top: 0;
+  background-color: #ffffff;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.flexFull {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.flexColumnFull {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.welcome {
+  font-size: 60px;
+}
+
+.contactBox {
+  background-color: #294377;
+  width: 450px;
+  height: 746px;
+  margin: 20px auto 50px auto;
+}
+
+.contactBox2 {
+  /* background-color: #74d1d285 ; */
+  width: 450px;
+  height: 746px;
+  margin: 20px auto 70px auto;
+}
+
+.reach {
+  color: white;
+  font-size: 33px;
+  text-align: left;
+  margin: 20px 45px 0 45px ;
+}
+
+.inputContainer {
+  margin: 20px auto 20px auto;
+  width: 350px;
+}
+
+.formInput {
+  width: 348px;
+  height: 37px;
+  margin: 0;
+  padding: 0;
+  border: white 1px solid;
+}
+
+.formTextArea {
+  width: 348px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  border: white 1px solid;
+}
+
+.label {
+  color: white;
+  font-size: 22px;
+  margin: 0;
+  text-align: left;
+  font-weight: 500;
+}
+
+.blueSubmit {
+  background-color: #104d86;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 7px;
+  height: 50px;
+  width: 350px;
+  border: white 1px solid;
+  margin: 20px auto 40px auto;
+}
+
+.contactHeader {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+  margin: 30px 0 0 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contactText {
+  font-size: 20px;
+  text-align: left;
+  margin: 10px 0 0 20px;
+}
+
+.contactText2 {
+  font-size: 20px;
+  text-align: left;
+  margin: 10px 0 0 20px;
+}
+
+.contactText3 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0px 0 0 20px;
+}
+
+.imageContainer {
+  position: absolute;
+  z-index: -10;
+  width: 100vw;
+  height: 300px;
+  top: 72px;
+  filter: opacity(40%);
+  overflow: hidden;
+  border-bottom: #74d1d2 solid 5px;
+}
+
+.imageContent {
+  width: 100vw;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (min-width: 800px) {
+  .flexColumnFullInner {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+  }
+}
