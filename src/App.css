@@ -166,15 +166,15 @@
 
 .contactBox {
   background-color: #294377;
-  width: 450px;
-  height: 746px;
+  max-width: 450px;
+  min-height: 746px;
   margin: 20px auto 50px auto;
 }
 
 .contactBox2 {
   /* background-color: #74d1d285 ; */
-  width: 450px;
-  height: 746px;
+  max-width: 450px;
+  min-height: 746px;
   margin: 20px auto 70px auto;
 }
 
