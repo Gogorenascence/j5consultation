@@ -27,6 +27,7 @@ function Footer() {
                 {/* <h3 className="footerLink">Call Now</h3> */}
             </div>
             <h4 className="copyRight">Copyright ©2024 J5 Health and Chiropractic</h4>
+            <br/>
         </div>
     );
 }

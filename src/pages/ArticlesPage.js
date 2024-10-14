@@ -12,12 +12,12 @@ function ArticlesPage({
                     {
                         articles.map((article) => {
                             return (
-                                <NavLink to={`articles/${article.articleID}`} className="navLink">
+                                <NavLink to={article.articleID} className="navLink">
                                     <div className="articleBoxTop flexFull">
                                         <img src={article.pictureURL} className="articleImage"/>
                                     </div>
                                     <div className="articleBoxBottom flexFull">
-                                        <p className="articleTitle">{article.title}</p>
+                                        <p className="articleTitleLink">{article.title}</p>
                                     </div>
                                 </NavLink>
                     )})}
