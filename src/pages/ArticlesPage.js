@@ -13,7 +13,7 @@ function ArticlesPage({
                         articles.map((article) => {
                             return (
                                 <NavLink to={`articles/${article.articleID}`} className="navLink">
-                                    <div className="articleBoxTop">
+                                    <div className="articleBoxTop flexFull">
                                         <img src={article.pictureURL} className="articleImage"/>
                                     </div>
                                     <div className="articleBoxBottom flexFull">
@@ -30,7 +30,7 @@ function ArticlesPage({
                         articles.map((article) => {
                             return (
                                 <NavLink to={`articles/${article.articleID}`} className="navLink">
-                                    <div className="articleBoxTop">
+                                    <div className="articleBoxTop flexFull">
                                         <img src={article.pictureURL} className="articleImage"/>
                                     </div>
                                     <div className="articleBoxBottom flexFull">

@@ -273,18 +273,18 @@
 }
 
 .articlesContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  gap: 20px;
-  grid-auto-flow: dense;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
 }
 
 .articleBoxTop {
   /* background-color: #294377; */
   height: 300px;
-  width: 450px;
+  width: auto;
   margin: auto;
-  border-radius: 9px 9px 0 0;
+  border-radius: 0 0 0 0;
   outline: #294377 solid 5px;
   overflow: hidden;
 }
@@ -292,15 +292,17 @@
 .articleBoxBottom {
   background-color: #294377;
   height: 150px;
-  width: 450px;
-  margin: auto;
-  border-radius: 0 0 8px 8px;
+  width: auto;
+  margin: 0 0 30px 0;
+  border-radius: 0 0 0 0;
   outline: #294377 solid 5px;
 }
 
 .articleImage {
-  width: 100%;
-  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .articleTitle {
@@ -321,5 +323,31 @@
     justify-content: center;
     justify-items: center;
     flex-direction: row;
+  }
+
+  .articleBoxTop {
+    /* background-color: #294377; */
+    height: 300px;
+    width: 450px;
+    margin: auto;
+    border-radius: 9px 9px 0 0;
+    outline: #294377 solid 5px;
+    overflow: hidden;
+  }
+
+  .articleBoxBottom {
+    background-color: #294377;
+    height: 150px;
+    width: 450px;
+    margin: auto;
+    border-radius: 0 0 8px 8px;
+    outline: #294377 solid 5px;
+  }
+
+  .articlesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+    grid-auto-flow: dense;
   }
 }
