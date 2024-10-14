@@ -12,9 +12,12 @@ function ArticlesPage({
                     {
                         articles.map((article) => {
                             return (
-                                <NavLink to={`articles/${article.articleID}`}>
-                                    <div className="articleBox">
-                                        {article.title}
+                                <NavLink to={`articles/${article.articleID}`} className="navLink">
+                                    <div className="articleBoxTop">
+                                        <img src={article.pictureURL} className="articleImage"/>
+                                    </div>
+                                    <div className="articleBoxBottom flexFull">
+                                        <p className="articleTitle">{article.title}</p>
                                     </div>
                                 </NavLink>
                     )})}
@@ -26,14 +29,19 @@ function ArticlesPage({
                     {
                         articles.map((article) => {
                             return (
-                                <NavLink to={`articles/${article.articleID}`}>
-                                    <div className="articleBox">
-                                        {article.title}
+                                <NavLink to={`articles/${article.articleID}`} className="navLink">
+                                    <div className="articleBoxTop">
+                                        <img src={article.pictureURL} className="articleImage"/>
+                                    </div>
+                                    <div className="articleBoxBottom flexFull">
+                                        <p className="articleTitle">{article.title}</p>
                                     </div>
                                 </NavLink>
                     )})}
                 </>
             </div>
+            <br/>
+            <br/>
         </div>
     );
 }
