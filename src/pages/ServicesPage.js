@@ -4,6 +4,8 @@ function ServicesPage({
     services
 }) {
 
+    window.scroll(0, 0)
+
     const [showLongDef, setShowLongDef] = useState({
         "workCompCase": false,
         "ir": false,

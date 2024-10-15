@@ -5,6 +5,8 @@ function ArticlesPage({
     externalArticles
 }) {
 
+    window.scroll(0, 0)
+
     return (
         <div className="flexColumnFull">
             <h1>Articles</h1>

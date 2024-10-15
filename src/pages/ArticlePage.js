@@ -32,6 +32,7 @@ useEffect(() => {
     getArticle()
 },[articleID])
 
+    window.scroll(0, 0)
 
     return (
         <div className="flexColumnFull">

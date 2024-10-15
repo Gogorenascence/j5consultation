@@ -1,6 +1,6 @@
 function MainPage({}) {
 
-  document.body.style.overflow = 'auto';
+  window.scroll(0, 0)
 
     return (
       <div className="flexColumnFull">

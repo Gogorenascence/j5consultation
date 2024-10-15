@@ -2,7 +2,7 @@ function FAQPage({
     faqText
 }) {
 
-    document.body.style.overflow = 'auto';
+    window.scroll(0, 0)
 
     const processedText = (text) => {
         return text?.split("//");

@@ -3,6 +3,8 @@ import ImageContainer from '../display/ImageContainer'
 
 function ContactPage() {
 
+    window.scroll(0, 0)
+
     const [message, setMessage] = useState({
         name: "",
         email: "",
