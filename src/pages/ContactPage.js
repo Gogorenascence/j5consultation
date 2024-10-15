@@ -3,7 +3,7 @@ import ImageContainer from '../display/ImageContainer'
 
 function ContactPage() {
 
-    window.scroll(0, 0)
+    // window.scroll(0, 0)
 
     const [message, setMessage] = useState({
         name: "",
@@ -114,6 +114,7 @@ function ContactPage() {
                 </div>
                 <div className="contactBox2">
                     <br/>
+                    <p className="contactHeader">Contact Info</p>
                     <p className="contactText2">
                         Phone: <a href="tel:682-472-1132">682-472-1132</a>
                     </p>
@@ -126,7 +127,7 @@ function ContactPage() {
                     <p className="contactText3">Fort Worth, TX 76112</p>
                     <p className="contactHeader">Hours</p>
                     <div className='flex'>
-                        <div className='days'>
+                        <div className='days marginTop-10'>
                             <p className="contactText3">Mon</p>
                             <p className="contactText3">Tue</p>
                             <p className="contactText3">Wed</p>
@@ -134,7 +135,7 @@ function ContactPage() {
                             <p className="contactText3">Fri</p>
                             <p className="contactText3">Sat</p>
                         </div>
-                        <div className='times'>
+                        <div className='times marginTop-10'>
                             <p className="contactText3">8:30am – 5:00pm</p>
                             <p className="contactText3">8:30am – 5:00pm</p>
                             <p className="contactText3">8:30am – 5:00pm</p>

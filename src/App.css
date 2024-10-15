@@ -156,6 +156,10 @@ body {
   margin: 0;
 }
 
+.marginTop-10 {
+  margin-top: 10px;
+}
+
 .marginLeft15 {
   margin-left: 15px;
 }
@@ -214,8 +218,8 @@ body {
 .contactBox2 {
   /* background-color: #74d1d285 ; */
   max-width: fit-content;
-  min-height: 746px;
-  margin: 20px auto 70px auto;
+  /* min-height: 746px; */
+  margin: 0 auto 70px auto;
 }
 
 .reach {
@@ -271,7 +275,7 @@ body {
   font-size: 30px;
   font-weight: 500;
   text-align: left;
-  margin: 30px 0 0 20px;
+  margin: 20px 0 0 20px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -279,6 +283,7 @@ body {
   font-size: 20px;
   text-align: left;
   margin: 10px 0 0 20px;
+  padding: 0;
 }
 
 .contactText2 {
@@ -440,6 +445,10 @@ body {
   margin: 0px 12px 20px 12px;
 }
 
+.hidden2 {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
   .flexColumnFullInner {
     display: flex;
@@ -482,5 +491,9 @@ body {
     border-radius: 0 0 9px 9px;
     outline: #294377 solid 5px;
     transition: all 0.3s;
+  }
+
+  .mediaDisplay {
+    display: block;
   }
 }
