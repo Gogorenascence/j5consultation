@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function ServicesPage({
     services
 }) {
-
-    window.scroll(0, 0)
 
     const [showLongDef, setShowLongDef] = useState({
         "workCompCase": false,
@@ -16,6 +14,10 @@ function ServicesPage({
         "piCase": false,
         "piReview": false
     })
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
 
     const handleShowLongDef = (term) => {
         if (showLongDef[term]) {
