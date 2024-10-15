@@ -45,7 +45,7 @@ function ServicesPage({
                                         <img src={service.pictureURL} className="articleImage"/>
                                     </div>
                                     <div className="serviceBoxBottom flexColumnItems"
-                                        style={{height: showLongDef[service.term]? "350px": "170px"}}
+                                        style={{height: showLongDef[service.term]? "440px": "220px"}}
                                     >
                                         <p className="serviceTitle">{service.title}</p>
                                         <p className={!showLongDef[service.term]? "serviceText": "hidden"}>{service.shortDef}</p>
