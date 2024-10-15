@@ -25,7 +25,25 @@ function BackToTop() {
     }, [showOnPx]);
 
     const goToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        const duration = 800; // Adjust duration in milliseconds for faster or slower scroll
+        const start = document.documentElement.scrollTop || document.body.scrollTop;
+        const startTime = performance.now();
+
+        const easeOutQuad = (t) => t * (2 - t);
+
+        const scroll = (timestamp) => {
+            const currentTime = timestamp - startTime;
+            const timeFraction = Math.min(currentTime / duration, 1);
+            const easing = easeOutQuad(timeFraction);
+
+            window.scrollTo(0, start * (1 - easing));
+
+            if (currentTime < duration) {
+                requestAnimationFrame(scroll);
+            }
+        };
+
+        requestAnimationFrame(scroll);
     };
 
     return (
