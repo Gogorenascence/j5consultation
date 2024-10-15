@@ -115,6 +115,7 @@ body {
 	cursor: pointer;
 	opacity: 100%;
 	transition: opacity 0.5s;
+  z-index: 2;
 }
 
 .sectionContainer {
