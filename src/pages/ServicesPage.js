@@ -1,21 +1,27 @@
 function ServicesPage({
-
+    services
 }) {
 
     return (
         <div className="flexColumnFull">
-            <h1>Articles</h1>
+            <h1>Services</h1>
             <div className="articlesContainer">
                 <>
-                    {/* {
-                        articles.map((article) => {
+                    {
+                        services.map((service) => {
                             return (
-                                <div className="articleBox">
-                                    {article.title}
+                                <div>
+                                    <div className="articleBoxTop flexFull">
+                                        <img src={service.pictureURL} className="articleImage"/>
+                                    </div>
+                                    <div className="articleBoxBottom flexFull">
+                                        <p className="articleTitleLink">{service.title}</p>
+                                    </div>
                                 </div>
-                    )})} */}
+                    )})}
                 </>
             </div>
+            <br/>
         </div>
     );
 }

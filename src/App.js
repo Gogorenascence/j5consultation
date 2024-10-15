@@ -19,6 +19,8 @@ function App() {
 
   let faqText = require('./data/faqText.json')
   let articles = require('./data/articles.json')
+  let externalArticles = require('./data/externalArticles.json')
+  let services = require('./data/services.json')
 
   return (
     <AppProvider>
@@ -32,9 +34,9 @@ function App() {
             <div className="app">
               <Routes>
                 <Route index element={<MainPage/>} />
-                <Route path="/services" element={<ServicesPage/>} />
+                <Route path="/services" element={<ServicesPage services={services}/>} />
                 <Route path="/contact" element={<ContactPage/>} />
-                <Route path="/articles" element={<ArticlesPage articles={articles}/>} />
+                <Route path="/articles" element={<ArticlesPage articles={articles} externalArticles={externalArticles}/>} />
                 <Route path="/articles/:articleID" element={<ArticlePage articles={articles}/>} />
                 <Route path="/faq" element={<FAQPage faqText={faqText}/>} />
               </Routes>

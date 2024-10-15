@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 
 function ArticlesPage({
-    articles
+    articles,
+    externalArticles
 }) {
 
     return (
@@ -10,7 +11,7 @@ function ArticlesPage({
             <div className="articlesContainer">
                 <>
                     {
-                        articles.map((article) => {
+                        articles.sort((a,b) => a.order - b.order).map((article) => {
                             return (
                                 <NavLink to={article.articleID} className="navLink">
                                     <div className="articleBoxTop flexFull">
@@ -27,20 +28,20 @@ function ArticlesPage({
             <div className="articlesContainer">
                 <>
                     {
-                        articles.map((article) => {
+                        externalArticles.map((article) => {
                             return (
-                                <NavLink to={`articles/${article.articleID}`} className="navLink">
+                                <a href={article.externalArticle} target="_blank" rel="noreferrer" key={article.title} className="navLink">
                                     <div className="articleBoxTop flexFull">
-                                        <img src={article.pictureURL} className="articleImage"/>
+                                        <img src={article.pictureURL ?? "j5ch.png"}
+                                            className={article.pictureURL? "articleImage": "articleImage2"}/>
                                     </div>
                                     <div className="articleBoxBottom flexFull">
-                                        <p className="articleTitle">{article.title}</p>
+                                        <p className="articleTitleLink">{article.title}</p>
                                     </div>
-                                </NavLink>
+                                </a>
                     )})}
                 </>
             </div>
-            <br/>
             <br/>
         </div>
     );

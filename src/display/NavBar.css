@@ -3,7 +3,8 @@
 }
 
 .navbar {
-    background-color: #74d1d2;
+    /* background-color: #74d1d2; */
+    background-color: #63b2d6;
     width: 100%;
     min-height: 72px;
     position: sticky;
