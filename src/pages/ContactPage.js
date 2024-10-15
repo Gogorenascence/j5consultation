@@ -114,9 +114,13 @@ function ContactPage() {
                 </div>
                 <div className="contactBox2">
                     <br/>
-                    <p className="contactText2">Phone: 682-472-1132</p>
+                    <p className="contactText2">
+                        Phone: <a href="tel:682-472-1132">682-472-1132</a>
+                    </p>
                     <p className="contactText3">Fax: 817-977-0333</p>
-                    <p className="contactText3">j5healthcenters@gmail.com</p>
+                    <p className="contactText3">
+                        Email: <a href="mailto:j5healthcenters@gmail.com">j5healthcenters@gmail.com</a>
+                    </p>
                     <p className="contactHeader">Location</p>
                     <p className="contactText2">5601 Bridge St. STE 300</p>
                     <p className="contactText3">Fort Worth, TX 76112</p>
