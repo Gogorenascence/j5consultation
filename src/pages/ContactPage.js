@@ -27,7 +27,7 @@ function ContactPage() {
     }
 
     useEffect(() => {
-        // window.scroll(0, 0);
+        window.scroll(0, 0);
     },[])
 
     const handleSubmit = async (event) => {
