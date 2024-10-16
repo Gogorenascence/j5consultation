@@ -13,6 +13,7 @@ import ArticlesPage from './pages/ArticlesPage';
 import ArticlePage from './pages/ArticlePage';
 import ContactPage from './pages/ContactPage';
 import FAQPage from './pages/FAQPage';
+import AboutPage from './pages/AboutPage';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   let articles = require('./data/articles.json')
   let externalArticles = require('./data/externalArticles.json')
   let services = require('./data/services.json')
+  let bios = require('./data/bios.json')
 
   return (
     <AppProvider>
@@ -34,6 +36,7 @@ function App() {
             <div className="app">
               <Routes>
                 <Route index element={<MainPage/>} />
+                <Route path="/about" element={<AboutPage bios={bios}/>} />
                 <Route path="/services" element={<ServicesPage services={services}/>} />
                 <Route path="/contact" element={<ContactPage/>} />
                 <Route path="/articles" element={<ArticlesPage articles={articles} externalArticles={externalArticles}/>} />

@@ -20,7 +20,7 @@ function NavBar(){
                         src="https://i.imgur.com/Q1Y2vV9.png"
                         alt="menu"/>
                 </div>
-                <NavLink className="navBarLink white" to="/directory">
+                <NavLink className="navBarLink white" to="/about">
                     <li className={show? "navMenuItem": "navMenuItem shrink"}
                         onClick={() => setShow(false)}
                     >
@@ -93,7 +93,7 @@ function NavBar(){
                     </li>
                 </NavLink>
                 <div className="mediaNav" style={{marginLeft: "20px"}}>
-                    <NavLink className="navBarLink white" to="/directory">
+                    <NavLink className="navBarLink white" to="/about">
                         <li className="navMenuItem">
                             <h2 className="fw-light">
                                 About

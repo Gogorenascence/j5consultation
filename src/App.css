@@ -445,6 +445,22 @@ body {
   display: none;
 }
 
+.mediaHidden {
+  display: block;
+}
+
+.bioPic {
+  max-width: 90%;
+  margin: 10px;
+  padding: 0;
+}
+
+.bioCredText {
+  font-size: large;
+  font-weight: 500;
+  margin: 5px;
+}
+
 @media screen and (min-width: 800px) {
   .flexColumnFullInner {
     display: flex;
@@ -491,5 +507,19 @@ body {
 
   .mediaDisplay {
     display: block;
+  }
+
+  .mediaFlex {
+    display: flex;
+  }
+
+  .mediaFlexFull {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .mediaHidden {
+    display: none;
   }
 }
