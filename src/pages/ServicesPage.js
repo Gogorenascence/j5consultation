@@ -48,12 +48,19 @@ function ServicesPage({
                                     <div className="articleBoxTop flexFull">
                                         <img src={service.pictureURL} className="articleImage"/>
                                     </div>
-                                    <div className="serviceBoxBottom flexColumnItems"
-                                        style={{height: showLongDef[service.term]? "440px": "220px"}}
+                                    <div className="serviceBoxBottom flexColumnItems spaceBetween"
+                                        style={{height: showLongDef[service.term]? "450px": "220px"}}
                                     >
-                                        <p className="serviceTitle">{service.title}</p>
-                                        <p className={!showLongDef[service.term]? "serviceText": "hidden"}>{service.shortDef}</p>
-                                        <p className={showLongDef[service.term]? "serviceText": "hidden"}>{service.longDef}</p>
+                                        <div>
+                                            <p className="serviceTitle">{service.title}</p>
+                                            <p className={!showLongDef[service.term]? "serviceText": "hidden"}>{service.shortDef}</p>
+                                            <p className={showLongDef[service.term]? "serviceText": "hidden"}>{service.longDef}</p>
+                                        </div>
+                                        <div className="arrowContainer flexFull">
+                                            <img src={!showLongDef[service.term]? "expand.png": "collapse.png"}
+                                                className="arrow"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                     )})}

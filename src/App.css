@@ -204,6 +204,17 @@ body {
   justify-items: center;
 }
 
+.flexColumnItems {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  justify-items: center;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
 .welcome {
   font-size: 60px;
 }
@@ -438,7 +449,20 @@ body {
   font-weight: 400;
   font-size: larger;
   padding: 0;
-  margin: 0px 12px 20px 12px;
+  margin: 0px 12px 0px 12px;
+}
+
+.arrow {
+  height: 10px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.arrowContainer {
+  position: relative;
+  height: 10px;
+  /* bottom: 95%; */
 }
 
 .hidden2 {
