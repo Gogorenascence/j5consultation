@@ -200,7 +200,6 @@ body {
 .flexColumnItems {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   justify-items: center;
 }
 
@@ -545,5 +544,9 @@ body {
 
   .mediaHidden {
     display: none;
+  }
+
+  .mediaSplit {
+    width: 50vw;
   }
 }

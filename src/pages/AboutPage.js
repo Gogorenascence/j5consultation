@@ -24,7 +24,7 @@ function AboutPage({
             <p className="bioCredText">{bios.certifications}</p>
           </div>
         </div>
-        <div className="sectionContainer">
+        <div className="sectionContainer mediaSplit">
           {processedText(bios.text)?.map((line) => (
               <>
                   {line.includes("]]") ? (
@@ -39,12 +39,12 @@ function AboutPage({
               </>
           ))}
         </div>
-        <div className="mediaDisplay hidden2">
-          <h3>Meet Dr. Jamon Clayton</h3>
-          <img src="clayton.jpg"/>
-          <div>
-            <p>{bios.license}</p>
-            <p>{bios.certifications}</p>
+        <div className="mediaDisplay hidden2 mediaSplit">
+          <h1 className="bioTitle margin-0">Dr. Jamon Clayton</h1>
+          <img src="clayton.jpg" className="bioPic"/>
+          <div className="">
+            <p className="bioCredText">{bios.license}</p>
+            <p className="bioCredText">{bios.certifications}</p>
           </div>
         </div>
       </div>
