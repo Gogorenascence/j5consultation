@@ -490,6 +490,13 @@ body {
   max-width: 500px;
 }
 
+.mainContactBox {
+  /* background-color: #74d1d285 ; */
+  max-width: fit-content;
+  /* min-height: 746px; */
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 800px) {
   .flexColumnFullInner {
     display: flex;

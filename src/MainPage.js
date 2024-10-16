@@ -7,7 +7,7 @@ function MainPage({
 }) {
 
   window.scroll(0, 0)
-  const mission = "We strive to deliver specialized guidance and comprehensive assessments in workers' compensation, social security disability, and personal injury cases, ensuring efficient, accurate claim management, and facilitating optimal outcomes that prioritize the well-being and recovery of individuals while meeting medical and legal standards."
+  const mission = "We strive to provide expert guidance and comprehensive evaluations in workers' compensation, social security disability, and personal injury cases, ensuring fair, effective claim management and supporting recovery, and clarity for all parties involved."
   const recentArticles = articles.concat(externalArticles).sort((a,b)=> b.order - a.order).slice(0, 4)
   const serviceNames = services.map(service => service.title)
   console.log(serviceNames)
@@ -16,9 +16,9 @@ function MainPage({
     <div className="flexColumnFull">
       <img src="j5ch.png" className="logo"/>
       <div style={{margin: "20px"}}>
-        <p className="margin-0">{mission}</p>
+        <p className="margin-0 contactText2">{mission}</p>
       </div>
-      <div className="contactBox2">
+      <div className="mainContactBox">
         <p className="contactHeader">Contact Info</p>
         <p className="contactText2">
             Phone: <a href="tel:682-472-1132">682-472-1132</a>
@@ -49,11 +49,12 @@ function MainPage({
                 <p className="contactText3">12:00pm – 4:00pm</p>
             </div>
         </div>
+        <br/>
         <NavLink to="/contact" className="navLink">
           <button className="blueSubmit">Message Us</button>
         </NavLink>
       </div>
-      <h1>Recent Articles</h1>
+      <h1 className="marginTop-10">Recent Articles</h1>
       <div className="articlesContainer">
           <>
               {
