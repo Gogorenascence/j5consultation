@@ -13,7 +13,7 @@ function ArticlesPage({
             <div className="articlesContainer">
                 <>
                     {
-                        articles.sort((a,b) => a.order - b.order).map((article) => {
+                        articles.sort((a,b) => b.order - a.order).map((article) => {
                             return (
                                 <NavLink to={article.articleID} className="navLink">
                                     <div className="articleBoxTop flexFull">
@@ -30,7 +30,7 @@ function ArticlesPage({
             <div className="articlesContainer">
                 <>
                     {
-                        externalArticles.map((article) => {
+                        externalArticles.sort((a,b) => b.order - a.order).map((article) => {
                             return (
                                 <a href={article.externalArticle} target="_blank" rel="noreferrer" key={article.title} className="navLink">
                                     <div className="articleBoxTop flexFull">

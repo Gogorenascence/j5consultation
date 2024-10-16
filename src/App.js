@@ -35,7 +35,11 @@ function App() {
             {/* <SimScrollbar/> */}
             <div className="app">
               <Routes>
-                <Route index element={<MainPage/>} />
+                <Route index element={<MainPage
+                  services={services}
+                  articles={articles}
+                  externalArticles={externalArticles}
+                />} />
                 <Route path="/about" element={<AboutPage bios={bios}/>} />
                 <Route path="/services" element={<ServicesPage services={services}/>} />
                 <Route path="/contact" element={<ContactPage/>} />

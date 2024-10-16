@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className="footer">
             <NavLink to="/" className="flexFull navLink">
-                <h1 className="footerHead">J5 Health and Chiropractic | Consultation</h1>
+                <h1 className="footerHead">J5 Health Centers | Consultation</h1>
             </NavLink>
             <div className="footerLinks">
                 <NavLink to="/about" className="navLink">
@@ -26,7 +26,7 @@ function Footer() {
                 </NavLink>
                 {/* <h3 className="footerLink">Call Now</h3> */}
             </div>
-            <h4 className="copyRight">Copyright ©2024 J5 Health and Chiropractic</h4>
+            <h4 className="copyRight">Copyright ©2024 J5 Health Centers</h4>
             <br/>
         </div>
     );
