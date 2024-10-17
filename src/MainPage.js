@@ -102,7 +102,7 @@ function MainPage({
         </>
       </div>
       <NavLink to="/services" className="navLink marginTop-10">
-        <button className="blueSubmit">See All Services</button>
+        <button className="blueSubmit">More Information</button>
       </NavLink>
       <h1 className="marginTop-10">Recent Articles</h1>
       <div className="articlesContainer medi aHidden">
