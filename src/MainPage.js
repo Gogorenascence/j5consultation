@@ -94,7 +94,7 @@ function MainPage({
                 <>
                   <div className="mainServiceBox">
                     <div className="mainServiceBoxContent">
-                      <p className="mainContactText">{service}</p>
+                      <p className="mainServiceText">{service}</p>
                     </div>
                   </div>
                 </>
