@@ -7,7 +7,7 @@ function MainPage({
   externalArticles
 }) {
 
-  // window.scroll(0, 0)
+  window.scroll(0, 0)
   const mission = "We strive to provide expert guidance and comprehensive evaluations in workers' compensation, social security disability, and personal injury cases, ensuring fair, effective claim management and supporting recovery, and clarity for all parties involved."
   const serviceNames = services.map(service => service.title)
 
@@ -47,7 +47,7 @@ function MainPage({
         <div>
           <p className="contactHeader">Contact Info</p>
           <p className="contactText2">
-              Phone: <a href="tel:682-472-1132">682-472-1132</a>
+              Phone: <a href="tel:817-422-6959">817-422-6959</a>
           </p>
           <p className="contactText3">Fax: 817-977-0333</p>
           <p className="contactText3">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ImageContainer from '../display/ImageContainer'
 import MapWithAddress from '../display/Map'
+import messageQueries from '../queries/MessageQueries'
 
 function ContactPage() {
 
@@ -10,17 +11,8 @@ function ContactPage() {
         name: "",
         email: "",
         phoneNumber: "",
-        message: "",
+        message: ""
     })
-
-    // const hours = {
-    //     "Monday": "8:30am – 5:00pm",
-    //     "Tuesday": "8:30am – 5:00pm",
-    //     "Wednesday": "8:30am – 5:00pm",
-    //     "Thursday":	"8:30am	– 5:00pm",
-    //     "Friday": "8:30am – 12:00pm",
-    //     "Saturday":	"12:00pm – 4:00pm"
-    // }
 
     const handleChange = (event) => {
         setMessage({...message, [event.target.name]: event.target.value })
@@ -32,36 +24,23 @@ function ContactPage() {
     },[])
 
     const handleSubmit = async (event) => {
-        console.log(message)
-        // event.preventDefault();
-        // const data = {...card};
-        // data["card_number"] = parseInt(card["card_number"], 10);
-        // data["enthusiasm"] = message.enthusiasm? parseInt(card["enthusiasm"], 10): null
-        // data["card_type"] = card_type
-        // data["extra_effects"] = extra_effects
-        // data["reactions"] = reactions
-        // data["card_tags"] = card_tags
-        // data["created_on"] = helper.createTimeObj2()
-        // data["updated_on"] = helper.createTimeObj2()
-        // console.log(update)
-        // const cardUrl = "https://pm-deck-react-only.onrender.com/cards/";
-        // const cardUrl = `http://localhost:4000/cards/${message.card_number}`
-        // const fetchConfig = {
-        //     method: "POST",
-        //     body: JSON.stringify(data),
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        // };
+        event.preventDefault();
+        const data = {...message};
 
-        // const response = await fetch(cardUrl, fetchConfig);
-        // if (response.ok) {
-        //     await response.json();
-        //     navigate(`/cards/${message.card_number}`)
-        // } else {
-        //     alert("Error in updating card");
-        // }
-    };
+        const createdMessage = await messageQueries.createMessage(data)
+
+        if (createdMessage) {
+            const clearedMessage = {
+                name: "",
+                email: "",
+                phoneNumber: "",
+                message: ""
+            }
+            setMessage(clearedMessage)
+        } else {
+            alert("Error in creating message");
+        }
+    }
 
 
     return (
@@ -111,14 +90,14 @@ function ContactPage() {
                             value={message.content}>
                         </textarea>
                     </div>
-                    <button className="blueSubmit">Submit</button>
+                    <button className="blueSubmit" onClick={handleSubmit}>Submit</button>
                 </div>
 
                     <div className="contactBox2">
                         <br/>
                         <p className="contactHeader">Contact Info</p>
                         <p className="contactText2">
-                            Phone: <a href="tel:682-472-1132">682-472-1132</a>
+                            Phone: <a href="tel:817-422-6959">817-422-6959</a>
                         </p>
                         <p className="contactText3">Fax: 817-977-0333</p>
                         <p className="contactText3">
