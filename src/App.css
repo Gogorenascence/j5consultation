@@ -513,6 +513,7 @@ body {
 }
 
 .mainServiceBox {
+  display: flex;
   background-color: #294377;
   justify-items: center;
   justify-content: center;
@@ -533,7 +534,7 @@ body {
 .mainServiceText {
   font-size: 20px;
   text-align: center;
-  margin: 12px 25px 0 25px;
+  margin: 5px 25px 5px 25px;
 }
 
 @media screen and (min-width: 800px) {
