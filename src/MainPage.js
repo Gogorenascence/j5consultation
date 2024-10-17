@@ -14,7 +14,7 @@ function MainPage({
   const [recentArticles, setRecentArticles] = useState([])
 
   useEffect(() => {
-    setRecentArticles([...articles, ...externalArticles].sort((a,b)=> b.order - a.order).slice(0, 4))
+    setRecentArticles([...articles, ...externalArticles].sort((a,b)=> b.order - a.order).slice(0, 3))
   }, [])
 
   const shiftList = (direction) => {
