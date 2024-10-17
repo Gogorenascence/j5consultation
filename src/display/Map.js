@@ -27,7 +27,7 @@ const MapWithAddress = () => {
     }, []);
 
     return (
-        <LoadScript googleMapsApiKey="AIzaSyCDKz0nTNMAO-0rUNo8WH6pibfg8HUU-14">
+        <LoadScript googleMapsApiKey="">
             <GoogleMap mapContainerStyle={mapContainerStyle} center={coordinates} zoom={15}>
                 <Marker position={coordinates} />
             </GoogleMap>
