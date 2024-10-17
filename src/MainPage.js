@@ -154,7 +154,7 @@ function MainPage({
           onClick={() => shiftList("right")}
         />
       </div>
-      <NavLink to="/articles" className="navLink">
+      <NavLink to="/articles" className="navLink marginTop-10">
         <button className="blueSubmit">See All Articles</button>
       </NavLink>
     </div>
