@@ -497,6 +497,12 @@ body {
   margin: 0 auto;
 }
 
+.mainContactText {
+  font-size: 20px;
+  text-align: left;
+  margin: 10px 25px 0 25px;
+}
+
 @media screen and (min-width: 800px) {
   .flexColumnFullInner {
     display: flex;
@@ -520,7 +526,7 @@ body {
     height: 150px;
     width: 450px;
     margin: auto;
-    border-radius: 0 0 9px 9px;
+      border-radius: 0 0 9px 9px;
     outline: #294377 solid 5px;
   }
 
@@ -561,5 +567,52 @@ body {
 
   .mediaSplit {
     width: 50vw;
+  }
+
+  .mainContactBox {
+    display: flex;
+    max-width: fit-content;
+    /* min-height: 746px; */
+    margin: 0 auto;
+  }
+
+  .carouselContainer {
+    overflow-x: hidden;
+    display: flex;
+    justify-items: center;
+    height: 480px;
+  }
+
+  .carouselBoxTop {
+    /* background-color: #294377; */
+    height: 300px;
+    width: 450px;
+    margin: 10px auto 0px auto;
+    padding: 0;
+    border-radius: 0 0 0 0;
+    outline: #294377 solid 5px;
+    overflow: hidden;
+  }
+
+  .carouselBoxBottom {
+    background-color: #294377;
+    height: 150px;
+    width: 450px;
+    margin: auto 8px;
+    padding: 0;
+    border-radius: 0 0 0 0;
+    outline: #294377 solid 5px;
+  }
+
+  .carouselLink {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .carouselLink:visited {
+    outline: none; /* removes outline on visited links */
+    border: none; /* removes border on visited links */
+    color: inherit; /* preserves original color */
   }
 }

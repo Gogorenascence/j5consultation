@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ImageContainer from '../display/ImageContainer'
+import MapWithAddress from '../display/Map'
 
 function ContactPage() {
 
@@ -112,40 +113,41 @@ function ContactPage() {
                     </div>
                     <button className="blueSubmit">Submit</button>
                 </div>
-                <div className="contactBox2">
-                    <br/>
-                    <p className="contactHeader">Contact Info</p>
-                    <p className="contactText2">
-                        Phone: <a href="tel:682-472-1132">682-472-1132</a>
-                    </p>
-                    <p className="contactText3">Fax: 817-977-0333</p>
-                    <p className="contactText3">
-                        Email: <a href="mailto:j5healthcenters@gmail.com">j5healthcenters@gmail.com</a>
-                    </p>
-                    <p className="contactHeader">Location</p>
-                    <p className="contactText2">5601 Bridge St. STE 300</p>
-                    <p className="contactText3">Fort Worth, TX 76112</p>
-                    <p className="contactHeader">Hours</p>
-                    <div className='flex'>
-                        <div className='days marginTop-10'>
-                            <p className="contactText3">Mon</p>
-                            <p className="contactText3">Tue</p>
-                            <p className="contactText3">Wed</p>
-                            <p className="contactText3">Thu</p>
-                            <p className="contactText3">Fri</p>
-                            <p className="contactText3">Sat</p>
+
+                    <div className="contactBox2">
+                        <br/>
+                        <p className="contactHeader">Contact Info</p>
+                        <p className="contactText2">
+                            Phone: <a href="tel:682-472-1132">682-472-1132</a>
+                        </p>
+                        <p className="contactText3">Fax: 817-977-0333</p>
+                        <p className="contactText3">
+                            Email: <a href="mailto:j5healthcenters@gmail.com">j5healthcenters@gmail.com</a>
+                        </p>
+                        <p className="contactHeader">Location</p>
+                        <p className="contactText2">5601 Bridge St. STE 300</p>
+                        <p className="contactText3">Fort Worth, TX 76112</p>
+                        <p className="contactHeader">Hours</p>
+                        <div className='flex'>
+                            <div className='days marginTop-10'>
+                                <p className="contactText3">Mon</p>
+                                <p className="contactText3">Tue</p>
+                                <p className="contactText3">Wed</p>
+                                <p className="contactText3">Thu</p>
+                                <p className="contactText3">Fri</p>
+                                <p className="contactText3">Sat</p>
+                            </div>
+                            <div className='times marginTop-10'>
+                                <p className="contactText3">8:30am – 5:00pm</p>
+                                <p className="contactText3">8:30am – 5:00pm</p>
+                                <p className="contactText3">8:30am – 5:00pm</p>
+                                <p className="contactText3">8:30am – 5:00pm</p>
+                                <p className="contactText3">8:30am – 12:00pm</p>
+                                <p className="contactText3">12:00pm – 4:00pm</p>
+                            </div>
                         </div>
-                        <div className='times marginTop-10'>
-                            <p className="contactText3">8:30am – 5:00pm</p>
-                            <p className="contactText3">8:30am – 5:00pm</p>
-                            <p className="contactText3">8:30am – 5:00pm</p>
-                            <p className="contactText3">8:30am – 5:00pm</p>
-                            <p className="contactText3">8:30am – 12:00pm</p>
-                            <p className="contactText3">12:00pm – 4:00pm</p>
-                        </div>
+                        <br/>
                     </div>
-                    <br/>
-                </div>
             </div>
         </div>
     );

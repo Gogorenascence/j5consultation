@@ -32,7 +32,7 @@ function AboutPage({
                           {processedBigLine(line)}
                       </p>
                   ) : (
-                      <p className="section margin-bottom-0">
+                      <p className="section margin-bottom-0 margin-0 contactText2">
                           {line}
                       </p>
                   )}
