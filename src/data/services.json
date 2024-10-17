@@ -4,55 +4,55 @@
         "shortDef": "Guidance for managing a worker's compensation case effectively",
         "longDef": "These consultations offer expert guidance to optimize the process of managing a worker's compensation claim. This involves assessing the needs of the injured worker, coordinating care and services, and ensuring all aspects of the claim are handled in alignment with legal and medical standards. The goal is to facilitate recovery while balancing the interests of the worker and the employer.",
         "term": "workCompCase",
-        "pictureURL": "https://media.licdn.com/dms/image/v2/C4E12AQF1oYGPzQlanw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520116216680?e=1734566400&v=beta&t=YCbe82LvRJ5mZte0PdyD9f5e9B3pcsvmpEIPZJ3zdqo"
+        "pictureURL": "workCompCase.jpeg"
     },
     {
         "title": "Workers compensation impairment ratings",
         "shortDef": "Evaluation of the level of permanent impairment after a work-related injury",
         "longDef": "Impairment ratings measure the extent of lasting disability or loss of function resulting from a workplace injury, often using standardized guidelines (e.g., AMA Guides to the Evaluation of Permanent Impairment). These ratings are critical in determining the compensation owed to an injured worker, and they provide a structured approach to quantify physical or mental impairments.",
         "term": "ir",
-        "pictureURL": "https://media.licdn.com/dms/image/v2/C4E12AQEEwffEhryODQ/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1520159332162?e=1734566400&v=beta&t=BcjplU9YCRaEWw-3t9gL_-WGSTywzezxI77XYOj_Jx0"
+        "pictureURL": "ir.jpg"
     },
     {
         "title": "Workers compensation alternative impairment ratings",
         "shortDef": "An alternative method for evaluating impairment when standard ratings may not apply",
         "longDef": "Alternative impairment ratings are assessments tailored to cases where standard impairment guidelines don’t fully capture the impact of an injury. Often applied in complex or unique cases, these alternative ratings consider other factors or methods that may provide a more accurate depiction of the worker's residual impairments, leading to a fairer compensation evaluation.",
         "term": "altIR",
-        "pictureURL": "https://media.licdn.com/dms/image/v2/C4E12AQHXLucWYUgr6w/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1520244642814?e=1734566400&v=beta&t=42QjgNoJdpb7y1HiQAYHgTAiy0AudtSw0KgL7Tk5BxU"
+        "pictureURL": "altIR.jpg"
     },
     {
         "title": "Workers compensation work hardening and chronic pain programs",
         "shortDef": "Rehabilitation programs designed to improve function and reduce pain for injured workers",
         "longDef": "Work hardening programs are intensive, goal-oriented rehab initiatives aimed at helping injured workers regain the physical and mental capabilities needed to return to work. Chronic pain programs focus on managing persistent pain that impacts functionality, incorporating physical therapy, pain management, and often behavioral health components to restore the worker's capacity and quality of life.",
         "term": "programs",
-        "pictureURL": "https://media.licdn.com/dms/image/v2/C4E12AQH6OWy08T-2cg/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1520054393806?e=1734566400&v=beta&t=5jVnuqvTCyqZVRQr_ngYD55yXaOKw9U3p1hegqeR9ic"
+        "pictureURL": "programs.jpg"
     },
     {
         "title": "Social security disability consultations",
         "shortDef": "Assistance in navigating Social Security Disability claims",
         "longDef": "These consultations support individuals in understanding and managing Social Security Disability (SSD) claims, including documentation requirements, eligibility criteria, and effective claim presentation. Professionals guide claimants through the application or appeal processes to maximize the likelihood of claim approval and appropriate compensation.",
         "term": "ssdConsult",
-        "pictureURL": "https://media.licdn.com/dms/image/v2/C4E12AQF1oYGPzQlanw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520116216680?e=1734566400&v=beta&t=YCbe82LvRJ5mZte0PdyD9f5e9B3pcsvmpEIPZJ3zdqo"
+        "pictureURL": "ssdConsult.jpg"
     },
     {
         "title": "Social security disability expert testimony and/or review",
         "shortDef": "Expert insights and testimony for Social Security Disability cases",
         "longDef": "This service provides expert evaluation, opinion, or testimony for Social Security Disability claims. Experts may review medical records, assess disability claims, and offer testimony in hearings or trials to clarify the claimant’s impairment status and substantiate their eligibility for SSD benefits.",
         "term": "ssdTestReview",
-        "pictureURL": "https://media.licdn.com/dms/image/v2/C4E12AQF1oYGPzQlanw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520116216680?e=1734566400&v=beta&t=YCbe82LvRJ5mZte0PdyD9f5e9B3pcsvmpEIPZJ3zdqo"
+        "pictureURL": "ssdTestReview.jpeg"
     },
     {
         "title": "Personal injury case management consultations",
         "shortDef": "Guidance on managing personal injury claims",
         "longDef": "These consultations provide strategic direction for personal injury cases, focusing on medical and legal aspects of claim management. Consultants help claimants, legal representatives, or insurers navigate treatment plans, medical evaluations, and documentation to support fair claim resolution and compensation.",
         "term": "piCase",
-        "pictureURL": "https://media.licdn.com/dms/image/v2/C4E12AQF1oYGPzQlanw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520116216680?e=1734566400&v=beta&t=YCbe82LvRJ5mZte0PdyD9f5e9B3pcsvmpEIPZJ3zdqo"
+        "pictureURL": "piCase.jpg"
     },
     {
         "title": "Personal injury peer review/case review",
         "shortDef": "An independent review of personal injury case details by a peer expert",
         "longDef": "Peer or case reviews involve an independent expert examining the details of a personal injury claim to provide an objective assessment. This review often includes evaluating the validity of injury claims, ensuring treatment appropriateness, and supporting or challenging the case’s merits, which can be essential for case resolution or litigation.",
         "term": "piReview",
-        "pictureURL": "https://media.licdn.com/dms/image/v2/C4E12AQF1oYGPzQlanw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520116216680?e=1734566400&v=beta&t=YCbe82LvRJ5mZte0PdyD9f5e9B3pcsvmpEIPZJ3zdqo"
+        "pictureURL": "piReview.jpg"
     }
 ]
