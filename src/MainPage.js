@@ -82,9 +82,28 @@ function MainPage({
         </div>
         <br/>
       </div>
-        <NavLink to="/contact" className="navLink">
-          <button className="blueSubmit">Message Us</button>
-        </NavLink>
+      <NavLink to="/contact" className="navLink">
+        <button className="blueSubmit">Message Us</button>
+      </NavLink>
+      <h1 className="marginTop-10">Our Services</h1>
+      <div className="mainServicesContainer">
+        <>
+          {
+            serviceNames.map((service) => {
+              return (
+                <>
+                  <div className="mainServiceBox">
+                    <div className="mainServiceBoxContent">
+                      <p className="mainContactText">{service}</p>
+                    </div>
+                  </div>
+                </>
+          )})}
+        </>
+      </div>
+      <NavLink to="/services" className="navLink marginTop-10">
+        <button className="blueSubmit">See All Services</button>
+      </NavLink>
       <h1 className="marginTop-10">Recent Articles</h1>
       <div className="articlesContainer medi aHidden">
         <>

@@ -500,14 +500,33 @@ body {
 .mainContactText {
   font-size: 20px;
   text-align: left;
-  margin: 10px 25px 0 25px;
+  margin: 15px 25px 0 25px;
 }
 
-.articlesContainer {
+.mainServicesContainer {
   display: flex;
   justify-content: center;
   justify-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainServiceBox {
+  background-color: #294377;
+  justify-items: center;
+  justify-content: center;
+  height: 60px;
+  width: fit-content;
+  transform: skew(-20deg);
+  margin: 10px
+}
+
+.mainServiceBoxContent {
+  transform: skew(20deg); /* Opposite skew to cancel out */
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 800px) {
