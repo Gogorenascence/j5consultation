@@ -532,7 +532,7 @@ body {
   min-height: 60px;
   width: fit-content;
   transform: skew(-20deg);
-  margin: 10px
+  margin: 10px 28px;
 }
 
 .mainServiceBoxContent {
@@ -669,5 +669,9 @@ body {
     outline: none; /* removes outline on visited links */
     border: none; /* removes border on visited links */
     color: inherit; /* preserves original color */
+  }
+
+  .mainServiceBox {
+    margin: 10px;
   }
 }
