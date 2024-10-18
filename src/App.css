@@ -160,6 +160,18 @@ body {
   margin-top: 10px;
 }
 
+.marginTop-20 {
+  margin-top: 20px;
+}
+
+.marginTop-0 {
+  margin: 0;
+}
+
+.marginBottom-30 {
+  margin-bottom: 30px;
+}
+
 .marginLeft15 {
   margin-left: 15px;
 }

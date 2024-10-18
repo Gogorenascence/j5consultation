@@ -7,7 +7,7 @@ function MainPage({
   externalArticles
 }) {
 
-  window.scroll(0, 0)
+  // window.scroll(0, 0)
   const mission = "We strive to provide expert guidance and comprehensive evaluations in workers' compensation, social security disability, and personal injury cases, ensuring fair, effective claim management and supporting recovery, and clarity for all parties involved."
   const serviceNames = services.map(service => service.title)
 
@@ -82,10 +82,17 @@ function MainPage({
         </div>
         <br/>
       </div>
-      <NavLink to="/contact" className="navLink">
-        <button className="blueSubmit">Message Us</button>
+      <NavLink to="/contact" className="navLink mediaHidden"
+        style={{marginTop: "-15px", marginBottom: "-20px"}}
+      >
+        <button className="blueSubmit ">Message Us</button>
       </NavLink>
-      <h1 className="marginTop-10">Our Services</h1>
+      <NavLink to="/contact" className="navLink mediaDisplay hidden2"
+        style={{marginBottom: "-25px"}}
+      >
+        <button className="blueSubmit ">Message Us</button>
+      </NavLink>
+      <h1 className="marginTo p-10">Our Services</h1>
       <div className="mainServicesContainer">
         <>
           {
@@ -101,10 +108,10 @@ function MainPage({
           )})}
         </>
       </div>
-      <NavLink to="/services" className="navLink marginTop-10">
+      <NavLink to="/services" className="navLink">
         <button className="blueSubmit">More Information</button>
       </NavLink>
-      <h1 className="marginTop-10">Recent Articles</h1>
+      <h1 className="marginTop-0 marginBottom-30">Recent Articles</h1>
       <div className="articlesContainer medi aHidden">
         <>
           {
@@ -173,7 +180,14 @@ function MainPage({
           onClick={() => shiftList("right")}
         />
       </div>
-      <NavLink to="/articles" className="navLink marginTop-10">
+      <NavLink to="/articles" className="navLink marginTop-20 mediaDisplay hidden2"
+        style={{marginBottom: "10px"}}
+      >
+        <button className="blueSubmit">See All Articles</button>
+      </NavLink>
+      <NavLink to="/articles" className="navLink mediaHidden"
+        style={{marginTop: "-15px", marginBottom: "10px"}}
+      >
         <button className="blueSubmit">See All Articles</button>
       </NavLink>
     </div>
