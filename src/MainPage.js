@@ -83,7 +83,7 @@ function MainPage({
         <br/>
       </div>
       <div className="mediaHidden"
-        style={{marginTop: "-15px", marginBottom: "-20px"}}
+        style={{marginTop: "-10px", marginBottom: "-20px"}}
       >
         <NavLink to="/contact" className="navLink">
           <button className="blueSubmit pointer">
