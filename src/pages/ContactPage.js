@@ -90,7 +90,7 @@ function ContactPage() {
                             value={message.content}>
                         </textarea>
                     </div>
-                    <button className="blueSubmit" onClick={handleSubmit}>Submit</button>
+                    <button className="blueSubmit pointer" onClick={handleSubmit}>Submit</button>
                 </div>
 
                     <div className="contactBox2">
