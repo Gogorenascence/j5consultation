@@ -553,6 +553,11 @@ body {
   cursor: pointer;
 }
 
+.buttonFill {
+  height: 50px;
+  width: 350px;
+}
+
 @media screen and (min-width: 800px) {
   .flexColumnFullInner {
     display: flex;

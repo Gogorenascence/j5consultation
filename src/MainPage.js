@@ -82,16 +82,24 @@ function MainPage({
         </div>
         <br/>
       </div>
-      <NavLink to="/contact" className="navLink mediaHidden"
+      <div className="mediaHidden"
         style={{marginTop: "-15px", marginBottom: "-20px"}}
       >
-        <button className="blueSubmit ">Message Us</button>
-      </NavLink>
-      <NavLink to="/contact" className="navLink mediaDisplay hidden2"
+        <NavLink to="/contact" className="navLink">
+          <button className="blueSubmit pointer">
+            Message Us
+          </button>
+        </NavLink>
+      </div>
+      <div className="mediaDisplay hidden2"
         style={{marginBottom: "-25px"}}
       >
-        <button className="blueSubmit ">Message Us</button>
-      </NavLink>
+        <NavLink to="/contact" className="navLink">
+          <button className="blueSubmit pointer">
+            Message Us
+          </button>
+        </NavLink>
+      </div>
       <h1 className="marginTo p-10">Our Services</h1>
       <div className="mainServicesContainer">
         <>
@@ -108,9 +116,13 @@ function MainPage({
           )})}
         </>
       </div>
-      <NavLink to="/services" className="navLink">
-        <button className="blueSubmit">More Information</button>
-      </NavLink>
+      <div>
+        <NavLink to="/services" className="navLink buttonFill">
+          <button className="blueSubmit pointer">
+            More Information
+          </button>
+        </NavLink>
+      </div>
       <h1 className="marginTop-0 marginBottom-30">Recent Articles</h1>
       <div className="articlesContainer medi aHidden">
         <>
@@ -180,16 +192,24 @@ function MainPage({
           onClick={() => shiftList("right")}
         />
       </div>
-      <NavLink to="/articles" className="navLink marginTop-20 mediaDisplay hidden2"
+      <div  className="marginTop-20 mediaDisplay hidden2"
         style={{marginBottom: "10px"}}
       >
-        <button className="blueSubmit">See All Articles</button>
-      </NavLink>
-      <NavLink to="/articles" className="navLink mediaHidden"
+        <NavLink to="/articles" className="navLink">
+          <button className="blueSubmit pointer">
+            See All Articles
+          </button>
+        </NavLink>
+      </div>
+      <div className="mediaHidden"
         style={{marginTop: "-15px", marginBottom: "10px"}}
       >
-        <button className="blueSubmit">See All Articles</button>
-      </NavLink>
+        <NavLink to="/articles" className="navLink">
+          <button className="blueSubmit pointer">
+            See All Articles
+          </button>
+        </NavLink>
+      </div>
     </div>
   );
 }
