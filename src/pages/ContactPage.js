@@ -26,19 +26,19 @@ function ContactPage() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         const data = {...message};
-
-        const createdMessage = await messageQueries.createMessage(data)
-
-        if (createdMessage) {
-            const clearedMessage = {
-                name: "",
-                email: "",
-                phoneNumber: "",
-                message: ""
+        if (message.name && (message.email || message.phoneNumber)) {
+            const createdMessage = await messageQueries.createMessage(data)
+            if (createdMessage) {
+                const clearedMessage = {
+                    name: "",
+                    email: "",
+                    phoneNumber: "",
+                    message: ""
+                }
+                setMessage(clearedMessage)
+            } else {
+                alert("Error in creating message");
             }
-            setMessage(clearedMessage)
-        } else {
-            alert("Error in creating message");
         }
     }
 
@@ -51,7 +51,7 @@ function ContactPage() {
                     <br/>
                     <p className="reach">Reach out with any questions or comments about our services</p>
                     <div className="inputContainer">
-                        <h5 className="label">Name </h5>
+                        <h5 className="label">Name <span style={{color: "red", fontSize: "30px"}}>*</span></h5>
                         <input
                             className="formInput"
                             type="text"
@@ -61,7 +61,7 @@ function ContactPage() {
                         </input>
                     </div>
                     <div className="inputContainer">
-                        <h5 className="label">Email Address</h5>
+                        <h5 className="label">Email Address <span style={{color: "red", fontSize: "30px"}}>*</span></h5>
                         <input
                             className="formInput"
                             type="text"
@@ -71,7 +71,7 @@ function ContactPage() {
                         </input>
                     </div>
                     <div className="inputContainer">
-                        <h5 className="label">Phone Number </h5>
+                        <h5 className="label">Phone Number <span style={{color: "red", fontSize: "30px"}}>*</span></h5>
                         <input
                             className="formInput"
                             type="text"
