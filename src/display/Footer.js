@@ -5,10 +5,13 @@ function Footer() {
 
     return (
         <div className="footer">
-            <NavLink to="/" className="flexFull navLink">
-                <h1 className="footerHead">J5 Health Centers | Consultation</h1>
-            </NavLink>
-            <div className="footerLinks">
+            <div className="flexFull">
+                <NavLink to="/" className="navLink">
+                    <h1 className="footerHead">
+                        J5 Health Centers | Consultation
+                    </h1>
+                </NavLink>
+            </div>            <div className="footerLinks">
                 <NavLink to="/about" className="navLink">
                     <h3 className="footerLink">About</h3>
                 </NavLink>
