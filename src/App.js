@@ -14,6 +14,7 @@ import ArticlePage from './pages/ArticlePage';
 import ContactPage from './pages/ContactPage';
 import FAQPage from './pages/FAQPage';
 import AboutPage from './pages/AboutPage';
+import LoginPage from './pages/LoginPage';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
                 <Route path="/articles" element={<ArticlesPage articles={articles} externalArticles={externalArticles}/>} />
                 <Route path="/articles/:articleID" element={<ArticlePage articles={articles}/>} />
                 <Route path="/faq" element={<FAQPage faqText={faqText}/>} />
+                {/* <Route path="/login" element={<LoginPage/>} /> */}
               </Routes>
             </div>
           </div>
