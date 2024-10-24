@@ -36,9 +36,9 @@ function AdminPage({
             <br/>
             <h1>Messages</h1>
                 <div className="messageTable">
-                    { messages?.map((message) => {
+                    { messages?.map((message, index) => {
                         return(
-                            <div className="messageRow marginBottom-30">
+                            <div className="messageRow marginBottom-30" key={index}>
                                 <div className="messageCellFront flex">
                                     <p className="mediaHidden">Name: &nbsp;</p>
                                     <p>{message.name}</p>
