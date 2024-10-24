@@ -558,6 +558,27 @@ body {
   width: 350px;
 }
 
+.messageRow {
+  display: block;
+  border: black 1px solid;
+}
+
+.messageCellFront {
+  border:none;
+}
+
+.messageCellMid {
+  border:none;
+}
+
+.messageCellEnd {
+  border:none;
+}
+
+.wrapText {
+  word-wrap: normal;
+}
+
 @media screen and (min-width: 800px) {
   .flexColumnFullInner {
     display: flex;
@@ -673,5 +694,25 @@ body {
 
   .mainServiceBox {
     margin: 10px;
+  }
+
+  .messageTable {
+    border: black 2px solid;
+  }
+
+  .messageRow {
+    display: flex;
+  }
+
+  .messageCellFront {
+    border: black 1px solid;
+  }
+
+  .messageCellMid {
+    border: black 1px solid;
+  }
+
+  .messageCellEnd {
+    border: black 1px solid;
   }
 }

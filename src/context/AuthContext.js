@@ -30,10 +30,6 @@ const AuthContextProvider = ({ children }) => {
     const [account, setAccount] = useState({
         userData: "",
         username: "",
-        collection: [],
-        wishlist: [],
-        decks: [],
-        favorited_decks: [],
         roles: [],
         id: "",
     })
@@ -45,10 +41,6 @@ const AuthContextProvider = ({ children }) => {
         email: "",
         password: "",
         username: "",
-        collection: [],
-        wishlist: [],
-        decks: [],
-        favorited_decks: [],
         roles: [],
         })
     const [updateCred, setUpdateCred] = useState({
@@ -56,12 +48,7 @@ const AuthContextProvider = ({ children }) => {
         username: "",
         password: "",
         unhashed_password: "",
-        collection: [],
-        wishlist: [],
-        decks: [],
-        favorited_decks: [],
         roles: [],
-        created_on: {},
         })
     const [passwordCon, setPasswordCon] = useState("")
     const [showLoginModal, setShowLoginModal] = useState(false)
@@ -87,12 +74,7 @@ const AuthContextProvider = ({ children }) => {
         const account_id = generateRandomString(24)
         const additionalData = {
             username: signUpCred.username,
-            collection: [],
-            wishlist: [],
-            decks: [],
-            favorited_decks: [],
             roles: [],
-            created_on: time_now,
             id: account_id
         };
 
@@ -148,12 +130,7 @@ const AuthContextProvider = ({ children }) => {
         await setDoc(doc(collection(db, "users"), user.uid), {
             email: user.email,
             username: additionalData.username,
-            collection: additionalData.collection,
-            wishlist: additionalData.wishlist,
-            decks: additionalData.decks,
-            favorited_decks: additionalData.favorited_decks,
             roles: additionalData.roles,
-            created_on: additionalData.created_on,
             id: additionalData.id
             // Add other properties as needed
         });
@@ -189,10 +166,6 @@ const AuthContextProvider = ({ children }) => {
             })
         setAccount({
             username: "",
-            collection: [],
-            wishlist: [],
-            decks: [],
-            favorited_decks: [],
             roles: [],
             created_on: "",
             id: "",
@@ -207,12 +180,7 @@ const AuthContextProvider = ({ children }) => {
             const accountData = {
                 userData: userData,
                 username: "",
-                collection: [],
-                wishlist: [],
-                decks: [],
-                favorited_decks: [],
                 roles: [],
-                created_on: "",
                 id: "",
             }
             try {
@@ -223,12 +191,7 @@ const AuthContextProvider = ({ children }) => {
                 } else {
                 const additionalData = snapshot.data();
                 accountData["username"] = additionalData.username ?? "No Name"
-                accountData["collection"] = additionalData.collection ?? []
-                accountData["wishlist"] = additionalData.wishlist ?? []
-                accountData["decks"] = additionalData.decks ?? []
-                accountData["favorited_decks"] = additionalData.favorited_decks ?? []
                 accountData["roles"] = additionalData.roles ?? []
-                accountData["created_on"] = additionalData.created_on ?? ""
                 accountData["id"] = additionalData.id ?? ""
                 setAccount(accountData)
                 }
@@ -247,12 +210,7 @@ const AuthContextProvider = ({ children }) => {
             email: "",
             username: "",
             password: "",
-            collection: [],
-            wishlist: [],
-            decks: [],
-            favorited_decks: [],
             roles: [],
-            created_on: {},
             id: "",
         });
         setPasswordCon("")

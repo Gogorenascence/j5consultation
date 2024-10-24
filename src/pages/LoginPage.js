@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import React, { useEffect, useState, useContext, useRef } from "react";
 import { AppContext } from "../context/AppContext";
 import {GoogleButton} from "react-google-button"
@@ -45,6 +45,8 @@ function LoginPage() {
         forgotPassword
     } = useContext(AuthContext)
 
+    const navigate = useNavigate()
+
     const {isDark} = useContext(AppContext)
 
     const navbar = useRef(null)
@@ -58,8 +60,8 @@ function LoginPage() {
     }
 
     useEffect(() => {
-    getUser()
-    },[]);
+        getUser()
+    },[account]);
 
     const handleShowLoginModal = (event) => {
         setShowLoginModal(!showLoginModal)
@@ -72,6 +74,7 @@ function LoginPage() {
         setViewPass(false)
         resetSignUpCred()
         setShowMobileMenu(false)
+        console.log(account)
     }
 
     const handleShowSignUpModal = async (event) => {
@@ -174,16 +177,31 @@ function LoginPage() {
     return (
         <div className="flexColumnFull">
             <div className="flexFull">
-                <button onClick={() => handleShowLoginModal()}
-                    className="blueSubmit"
-                >
-                    Login
-                </button>
-                <button onClick={() => handleShowSignUpModal()}
+                {account && account.roles.includes("admin")?
+                    <button onClick={() => navigate("/admin")}
+                        className="blueSubmit"
+                    >
+                        Messages
+                    </button>
+                :
+                    <button onClick={() => handleShowLoginModal()}
+                        className="blueSubmit"
+                    >
+                        Login
+                    </button>
+                }
+                {account && account.roles.includes("admin")?
+                    <button onClick={() => logout()}
+                        className="blueSubmit"
+                    >
+                        Logout
+                    </button>
+                :null}
+                {/* <button onClick={() => handleShowSignUpModal()}
                     className="blueSubmit"
                 >
                     Signup
-                </button>
+                </button> */}
             </div>
             { showSignUpModal?
                 <>
@@ -343,10 +361,10 @@ function LoginPage() {
                     <div className="aligned">
                         <button className="front-button" type="submit">Login</button>
                         <button className="end-button margin-left-3" onClick={handleShowLoginModal}>Close</button>
-                        <div className="wide100p flex-full margin-top-20 none">
+                        <div className="wide100p flex-full margin-top-20 hidden">
                         <GoogleButton onClick={() => handleGoogleSignIn(handleShowLoginModal)}/>
                         </div>
-                        <div className="wide100p flex-full margin-top-20 hidden4 media-flex-center">
+                        <div className="wide100p flex-full margin-top-20 mediaHidden media-flex-center">
                         <GoogleButton onClick={() => handleGoogleSignInMobile(handleShowLoginModal)}/>
                         </div>
                         <p onClick={handleShowSignUpModal}

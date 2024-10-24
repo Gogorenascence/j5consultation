@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import LightSwitch from './display/LightSwitch';
+// import LightSwitch from './display/LightSwitch';
 import BackToTop from './display/BackToTop';
 import AppProvider from './context/AppProvider';
 import MainPage from './MainPage';
@@ -15,6 +14,7 @@ import ContactPage from './pages/ContactPage';
 import FAQPage from './pages/FAQPage';
 import AboutPage from './pages/AboutPage';
 import LoginPage from './pages/LoginPage';
+import AdminPage from './pages/AdminPage';
 
 
 function App() {
@@ -47,7 +47,8 @@ function App() {
                 <Route path="/articles" element={<ArticlesPage articles={articles} externalArticles={externalArticles}/>} />
                 <Route path="/articles/:articleID" element={<ArticlePage articles={articles}/>} />
                 <Route path="/faq" element={<FAQPage faqText={faqText}/>} />
-                {/* <Route path="/login" element={<LoginPage/>} /> */}
+                <Route path="/login" element={<LoginPage/>} />
+                <Route path="/admin" element={<AdminPage/>} />
               </Routes>
             </div>
           </div>

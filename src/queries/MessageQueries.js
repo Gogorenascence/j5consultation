@@ -13,13 +13,14 @@ import {
 import helper from "./Helper"
 
 const messageQueries = {
-    getmessagesData: async function getmessagesData() {
+    getMessagesData: async function getMessagesData() {
         const messagesCollectionRef = collection(db, "messages")
         const response = await getDocs(messagesCollectionRef);
         const data = response.docs.map((doc) => ({
             ...doc.data(),
         }))
-        helper.createAllTimesAgos(data)
+        console.log(data)
+        // helper.createAllTimesAgos(data)
         return data
     },
     getMessageDataById: async function getMessageDataById(id) {

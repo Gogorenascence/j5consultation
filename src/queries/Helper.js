@@ -205,6 +205,26 @@ const helper = {
     },
     deepCopy: function deepCopy(obj) {
         return JSON.parse(JSON.stringify(obj));
+    },
+    centralTimeString: function centralTimeString(full_time) {
+        // Convert the full_time into a JavaScript Date object
+        const utcDate = new Date(full_time);
+        // Create an Intl.DateTimeFormat object for Central Time (CT)
+        const options = {
+            timeZone: 'America/Chicago', // Central Time (US & Canada)
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false // Optional: Set to true for 12-hour format
+        };
+
+        const centralTimeFormatter = new Intl.DateTimeFormat('en-US', options);
+        const centralTime = centralTimeFormatter.format(utcDate);
+
+        // Display the formatted string
+        return centralTime
     }
 }
 
