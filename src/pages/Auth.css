@@ -117,3 +117,13 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (min-width: 800px) {
+    .media-flex {
+        display: flex;
+    }
+
+    .mediaHidden {
+        display: none;
+    }
+}

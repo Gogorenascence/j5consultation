@@ -361,11 +361,11 @@ function LoginPage() {
                     <div className="aligned">
                         <button className="front-button" type="submit">Login</button>
                         <button className="end-button margin-left-3" onClick={handleShowLoginModal}>Close</button>
-                        <div className="wide100p flex-full margin-top-20 hidden">
-                        <GoogleButton onClick={() => handleGoogleSignIn(handleShowLoginModal)}/>
+                        <div className="wide100p flex-full margin-top-20 hidden4 media-flex">
+                            <GoogleButton onClick={() => handleGoogleSignIn(handleShowLoginModal)}/>
                         </div>
-                        <div className="wide100p flex-full margin-top-20 mediaHidden media-flex-center">
-                        <GoogleButton onClick={() => handleGoogleSignInMobile(handleShowLoginModal)}/>
+                        <div className="wide100p flex-full margin-top-20 mediaHidden">
+                            <GoogleButton onClick={() => handleGoogleSignInMobile(handleShowLoginModal)}/>
                         </div>
                         <p onClick={handleShowSignUpModal}
                         className="pointer label-center">
