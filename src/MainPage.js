@@ -124,36 +124,38 @@ function MainPage({
         </NavLink>
       </div>
       <h1 className="marginTop-0 marginBottom-30">Recent Articles</h1>
-      <div className="articlesContainer medi aHidden">
-        <>
-          {
-            recentArticles.sort((a,b) => b.order - a.order).map((article) => {
-              return (
-                <>
-                  {article.externalArticle?
-                    <a href={article.externalArticle} target="_blank" rel="noreferrer" key={article.title} className="navLink">
-                      <div className="articleBoxTop flexFull">
-                        <img src={article.pictureURL ?? "j5ch.png"}
-                            className={article.pictureURL? "articleImage": "articleImage2"}/>
-                      </div>
-                      <div className="articleBoxBottom flexFull">
+
+        <div className="articlesContainer marginAuto medi aHidden">
+          <>
+            {
+              recentArticles.sort((a,b) => b.order - a.order).map((article) => {
+                return (
+                  <>
+                    {article.externalArticle?
+                      <a href={article.externalArticle} target="_blank" rel="noreferrer" key={article.title} className="navLink">
+                        <div className="articleBoxTop flexFull">
+                          <img src={article.pictureURL ?? "j5ch.png"}
+                              className={article.pictureURL? "articleImage": "articleImage2"}/>
+                        </div>
+                        <div className="articleBoxBottom flexFull">
+                            <p className="articleTitleLink">{article.title}</p>
+                        </div>
+                      </a>:
+                      <NavLink to={`articles/${article.articleID}`} className="navLink">
+                        <div className="articleBoxTop flexFull">
+                          <img src={article.pictureURL} className="articleImage"/>
+                        </div>
+                        <div className="articleBoxBottom flexFull">
                           <p className="articleTitleLink">{article.title}</p>
-                      </div>
-                    </a>:
-                    <NavLink to={`articles/${article.articleID}`} className="navLink">
-                      <div className="articleBoxTop flexFull">
-                        <img src={article.pictureURL} className="articleImage"/>
-                      </div>
-                      <div className="articleBoxBottom flexFull">
-                        <p className="articleTitleLink">{article.title}</p>
-                      </div>
-                    </NavLink>
-                  }
-                </>
-          )})}
-        </>
-      </div>
-      <div className="carouse lContainer hidden2">
+                        </div>
+                      </NavLink>
+                    }
+                  </>
+            )})}
+          </>
+        </div>
+
+      {/* <div className="carouse lContainer hidden2">
         <img src="previous.png"
           onClick={() => shiftList("left")}
         />
@@ -191,7 +193,7 @@ function MainPage({
         <img src="next.png"
           onClick={() => shiftList("right")}
         />
-      </div>
+      </div> */}
       <div  className="marginTop-20 mediaDisplay hidden2"
         style={{marginBottom: "10px"}}
       >
