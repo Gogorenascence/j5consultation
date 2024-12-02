@@ -365,7 +365,7 @@ function LoginPage() {
                             <GoogleButton onClick={() => handleGoogleSignIn(handleShowLoginModal)}/>
                         </div>
                         <div className="wide100p flex-full margin-top-20 mediaHidden">
-                            <GoogleButton onClick={() => handleGoogleSignInMobile(handleShowLoginModal)}/>
+                            <GoogleButton onClick={() => handleGoogleSignIn(handleShowLoginModal)}/>
                         </div>
                         <p onClick={handleShowSignUpModal}
                         className="pointer label-center">
