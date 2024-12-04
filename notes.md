@@ -38,3 +38,9 @@ Detailed: These consultations provide strategic direction for personal injury ca
 Personal Injury Peer Review / Case Review
 Short: An independent review of personal injury case details by a peer expert.
 Detailed: Peer or case reviews involve an independent expert examining the details of a personal injury claim to provide an objective assessment. This review often includes evaluating the validity of injury claims, ensuring treatment appropriateness, and supporting or challenging the case’s merits, which can be essential for case resolution or litigation.
+
+
+49.99 30 min consultation
+services lead to booking form
+
+external articles - regards big employers
